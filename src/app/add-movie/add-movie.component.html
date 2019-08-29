@@ -1,0 +1,21 @@
+<div class="container mx-5 my-5 px-5 py-5">
+  <form (ngSubmit)=onsubmit(f) #f="ngForm">
+    <div class="form-group">
+      <label>Movie</label>
+      <input type="text" class="form-control" name="movie" ngModel>
+    </div>
+    <div class="form-group">
+      <label>Actor</label>
+      <input type="text" class="form-control" name="actor" ngModel>
+    </div>
+    <div class="form-group">
+      <label>Actress</label>
+      <input type="text" class="form-control" name="actress" ngModel>
+    </div>
+    <div class="form-group">
+      <label>Director</label>
+      <input type="text" class="form-control" name="director" ngModel>
+    </div>
+    <button type="submit" class="btn btn-primary" style="float: right;">Submit</button>
+  </form>
+</div>

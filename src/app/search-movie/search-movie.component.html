@@ -1,0 +1,20 @@
+<form (ngSubmit)=onSubmit(f) #f="ngForm">
+    <div class="form-group">
+      <label>Movie</label>
+      <input type="text" class="form-control" name="movie" ngModel>
+    </div>
+    <button type="submit" class="btn btn-primary" style="float: right;">Submit</button>
+  </form>
+
+  
+  <table class="table">
+      
+      <tbody>
+        <tr *ngFor = "let data of mydata">
+          <td>{{data.movie}}</td>
+          <td>{{data.actor}}</td>
+          <td>{{data.actress}}</td>
+          <td>{{data.director}}</td>
+        </tr>
+      </tbody>
+    </table>
