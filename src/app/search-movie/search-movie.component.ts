@@ -11,7 +11,7 @@ export class SearchMovieComponent implements OnInit {
 
   constructor(private apiservice: ApiService) { }
 
-  private mydata: Array<object> = [];
+  mydata: Array<object> = [];
 
   onSubmit(data:NgForm){
     this.apiservice.searchData(data.value).subscribe((Response: Array<object>)=>{

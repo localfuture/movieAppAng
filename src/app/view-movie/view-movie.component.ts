@@ -10,7 +10,7 @@ export class ViewMovieComponent implements OnInit {
 
   constructor(private apiservice: ApiService) { }
 
-  private mydata: Array<object> = [];
+  mydata: Array<object> = [];
 
   ngOnInit() {
     this.fetchData();
